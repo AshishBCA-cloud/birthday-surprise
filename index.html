@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Didu ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="temp.js"></script>
+</head>
+
+<body>
+
+<div id="welcome" class="screen">
+
+<h1>🎉 Happy Birthday Didu 🎉</h1>
+
+<h2>💖 Welcome My Lovely Sister 💖</h2>
+
+<p>
+Today is your special day...
+I have made a small surprise only for you.
+</p>
+
+<button onclick="nextPassword()">
+Start Surprise 🎁
+</button>
+
+</div>
+
+
+
+<div id="passwordScreen" class="screen hide">
+
+<h1>🔐 Enter Password</h1>
+
+<p>
+Hint ❤️ : Password is related to our relation.
+</p>
+
+<input
+type="password"
+id="password"
+placeholder="Enter Password">
+
+<br><br>
+
+<button onclick="checkPassword()">
+Unlock 💖
+</button>
+
+<p id="wrongPassword"></p>
+
+</div>
+
+
+
+<div id="loveScreen" class="screen hide">
+
+<h1>❤️ Do You Love Me? ❤️</h1>
+
+<button onclick="yesLove()">
+YES 💖
+</button>
+
+<button onclick="noLove()">
+NO 😒
+</button>
+
+<p id="loveText"></p>
+
+</div>
+
+
+
+<div id="loadingScreen" class="screen hide">
+
+<h1>🎁 Wait...</h1>
+
+<h2>Your Birthday Surprise is Loading...</h2>
+
+<div class="loader"></div>
+
+</div>
+
+
+
+<div id="ageScreen" class="screen hide">
+
+<h1>🎂 Birthday Cake is Ready 🎂</h1>
+
+<div class="cake">
+🎂
+</div>
+
+<h2>
+
+How old are you today?
+
+</h2>
+
+<input
+type="number"
+id="age"
+placeholder="Enter Age">
+
+<br><br>
+
+<button onclick="createBalloons()">
+
+Continue 🎈
+
+</button>
+
+</div>
+
+
+
+<div id="balloonScreen" class="screen hide">
+
+<h1>
+
+🎈 Pop All Balloons 🎈
+
+</h1>
+
+<div id="balloonContainer">
+
+</div>
+
+<p>
+
+Balloons Left :
+<span id="left">
+
+0
+
+</span>
+
+</p>
+
+</div>
+<!-- CANDLE SCREEN -->
+
+<div id="candleScreen" class="screen hide">
+
+<h1>
+🕯️ Make a Wish 🕯️
+</h1>
+
+<div class="bigCake">
+🎂🕯️🕯️🕯️
+</div>
+
+<h2>
+Close your eyes and make a beautiful wish ✨
+</h2>
+
+<button onclick="openEnvelope()">
+I Made My Wish 💫
+</button>
+
+</div>
+
+
+
+<!-- ENVELOPE SCREEN -->
+
+<div id="envelopeScreen" class="screen hide">
+
+<h1>
+💌 A Special Letter For You 💌
+</h1>
+
+
+<div class="envelope" onclick="showLetter()">
+
+💌
+
+<p>
+Click Me Didu ❤️
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+<!-- LETTER SCREEN -->
+
+<div id="letterScreen" class="screen hide">
+
+
+<div class="letterBox">
+
+<h1>
+❤️ Happy Birthday Didu ❤️
+</h1>
+
+
+<p>
+
+Happy Birthday, my lovely sister! 🎉🥳
+
+<br><br>
+
+Sabse pehle meri pyari didu ko birthday ki bahut saari wishes. ❤️
+
+<br><br>
+
+Kanha Ji se meri bas yehi dua hai ki aap hamesha khush raho,
+healthy raho aur life me hamesha success pao. 🌸🙏
+
+<br><br>
+
+Aap meri life ke un special logon me se ho jinki wajah se
+mujhe hamesha support aur pyaar mila hai. 💕
+
+<br><br>
+
+Thank you didu hamesha mera saath dene ke liye,
+meri choti-choti baaton ko samajhne ke liye aur mujhe motivate karne ke liye. 🤍
+
+<br><br>
+
+Aap hamesha aise hi sweet, caring aur amazing rehna.
+
+<br><br>
+
+May Kanha Ji bless you with lots of happiness,
+success, love and a bright future. ✨
+
+<br><br>
+
+Aapke saare dreams pure ho,
+aapko life me har wo khushi mile jo aap deserve karti ho. 💙
+
+<br><br>
+
+Aapki smile hamesha aise hi bani rahe,
+aur aapki life me kabhi khushiyon ki kami na ho. 😊
+
+<br><br>
+
+Aaj ka din sirf aapka hai,
+to ise enjoy karo aur bahut saari beautiful memories banao. 🎂🎈
+
+<br><br>
+
+Once again,
+
+<br>
+
+🎉 Happy Birthday My Dear Didu 🎉
+
+<br><br>
+
+Love you so much ❤️
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+</body>
+
+</html>

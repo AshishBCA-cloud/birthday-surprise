@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4,#fad0c4);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+
+.screen{
+    width:90%;
+    max-width:600px;
+    background:rgba(255,255,255,0.9);
+    padding:30px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 0 30px rgba(0,0,0,0.2);
+    animation:fade 1s;
+}
+
+
+.hide{
+    display:none;
+}
+
+
+h1{
+    color:#ff3366;
+    margin-bottom:20px;
+}
+
+
+h2{
+    color:#ff6699;
+    margin:15px;
+}
+
+
+p{
+    color:#555;
+    font-size:18px;
+    line-height:1.6;
+}
+
+
+button{
+    margin-top:20px;
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    background:#ff3366;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+
+button:hover{
+    transform:scale(1.1);
+    background:#ff0055;
+}
+
+
+input{
+    padding:12px;
+    width:80%;
+    border-radius:20px;
+    border:2px solid #ff6699;
+    outline:none;
+    text-align:center;
+    font-size:16px;
+}
+
+
+/* Loading */
+
+.loader{
+    width:60px;
+    height:60px;
+    border:8px solid #ffd1dc;
+    border-top:8px solid #ff3366;
+    border-radius:50%;
+    margin:30px auto;
+    animation:spin 1s linear infinite;
+}
+
+
+@keyframes spin{
+
+100%{
+    transform:rotate(360deg);
+}
+
+}
+
+
+
+/* Cake */
+
+.cake{
+    font-size:100px;
+    animation:bounce 1s infinite alternate;
+}
+
+
+.bigCake{
+    font-size:90px;
+    margin:20px;
+}
+
+
+@keyframes bounce{
+
+from{
+transform:translateY(0);
+}
+
+to{
+transform:translateY(-20px);
+}
+
+}
+
+
+
+/* Balloons */
+
+
+#balloonContainer{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin:20px;
+}
+
+
+.balloon{
+
+width:60px;
+height:80px;
+background:#ff6699;
+border-radius:50%;
+cursor:pointer;
+position:relative;
+animation:float 2s infinite alternate;
+
+}
+
+
+.balloon:after{
+
+content:"";
+position:absolute;
+bottom:-25px;
+left:28px;
+height:30px;
+border-left:2px solid #555;
+
+}
+
+
+
+@keyframes float{
+
+from{
+transform:translateY(0);
+}
+
+to{
+transform:translateY(-20px);
+}
+
+}
+
+
+
+/* Envelope */
+
+
+.envelope{
+
+font-size:100px;
+cursor:pointer;
+animation:bounce 1s infinite alternate;
+
+}
+
+
+.envelope p{
+
+font-size:18px;
+
+}
+
+
+
+/* Letter */
+
+
+.letterBox{
+
+background:white;
+padding:30px;
+border-radius:20px;
+max-height:80vh;
+overflow-y:auto;
+box-shadow:0 0 30px pink;
+
+}
+
+
+
+.letterBox p{
+
+font-size:17px;
+color:#444;
+
+}
+
+
+
+@keyframes fade{
+
+from{
+opacity:0;
+transform:scale(.8);
+}
+
+to{
+opacity:1;
+transform:scale(1);
+}
+
+}
